@@ -1,0 +1,116 @@
+:root{
+    --secondary-color: rgb(235, 41, 122);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url(back.png),
+    linear-gradient(to top, rgb(75, 248, 32),rgb(8, 8, 241));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+section{
+    /* position: absolute; */
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 20px;
+}
+.left h1{
+   color: #fff;
+   font-size: 2rem;
+   font-weight: bold;
+}
+.left p{
+   color: #f3f2f2;
+   font-size: .9rem;
+   line-height: 1rem;
+   font-family: sans-serif;
+   /* font-variant: small-caps; */
+}
+.left{
+    width: 15rem;
+}
+.left .show{
+    margin-top: 2rem;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: #fff;
+    padding-left: 2rem;
+}
+.rigth h3{
+    font-size: 1.0em;
+    opacity: 0.8;
+}
+.rigth{
+    width: 16rem;
+}
+form{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px gray;
+    padding: 1rem;
+}
+.rigth input:not(input[type='radio']),
+.submit{
+    width: 100%;
+    height: 1.5rem;
+    margin-top: .5rem;
+    font-size: 0.2rem;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+#contact{
+    margin-top: 1rem;
+}
+#contact p{
+    font-size: .5rem;
+    opacity: 0.6;
+    font-family: sans-serif;
+}
+#contact input{
+    outline: none;
+    margin-top: .9rem;
+}
+ #contact label{
+   opacity: 0.7;
+   padding-left: 7px;
+   font-size: .5rem;
+}
+ textarea{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 5rem;
+    min-height: 5rem;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+ }
+ .submit{
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    line-height: 0;
+ }
+ .submit a{
+    text-decoration: none;
+    color: aliceblue;
+ }
+
